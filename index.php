@@ -38,7 +38,7 @@ $dbh = new sdbh();
                 <?php } ?>
 
                 <label for="customRange1" class="form-label" id="count">Количество дней:</label>
-                <input type="number" name="days" class="form-control" id="customRange1" min="1" max="30">
+                <input type="number" name="days" class="form-control" id="customRange1" min="1" max="30" value="1">
 
                 <?php $services = unserialize($dbh->mselect_rows('a25_settings', ['set_key' => 'services'], 0, 1, 'id')[0]['set_value']);
                 if (is_array($services)) {

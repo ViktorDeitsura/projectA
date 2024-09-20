@@ -32,7 +32,6 @@ const addProduct = function(event) {
         processData: false,
         data: formData,
         success: function(data) {
-            console.log(data);
             showAlert("Товар успешно добавлен","alert-success", function(){document.location.reload();});
         },
         error: function() {
@@ -67,5 +66,4 @@ $("#tarifAdd").on("click", function() {
     $("#tarifDayCount").val("");
     $("#tarifPrice").val("");
     showTarif();
-    console.log(tarifArray);
 });

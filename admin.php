@@ -21,7 +21,7 @@ if (!$user->isAdmin) die('Доступ закрыт');
                 <h2>Добавление товара</h2>
             </div>
             <div class="col-12">
-                <form action="App/Application/AdminService.php" method="POST" id="adminForm" onsubmit="return;">
+                <form action="App/Application/AdminService.php" method="POST" id="adminForm" onsubmit="return addProduct(event);">
                     <div class="col-12 mb-4">
                         <label class="form-label" for="productName">Название товара:</label>
                         <input type="text" name="prod-name" class="form-control" id="productName">
